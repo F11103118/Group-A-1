@@ -1,0 +1,22 @@
+Function iobox
+	Wait Sw(0) = On
+	Xqt task3
+	Do While Sw(0) = On And Sw(7) = Off
+		If Sw(4) = On Then
+			Halt task3
+		Else
+			Resume task3
+		EndIf
+	Loop
+Do While Sw(0) = On And Sw(2) = Off
+	If Sw(1) = On Then
+		Xqt task4
+	EndIf
+Loop
+	Quit task3
+	Off 7
+	Wait 5
+	Home
+	
+Fend
+
