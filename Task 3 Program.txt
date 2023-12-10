@@ -1,0 +1,80 @@
+Integer circulet
+Integer squaret
+Function task3
+	Tool 1
+	Go P1
+For circulet = 0 To 2
+	FeedtC()
+	FixtC()
+	PlacetC()
+	Next
+	For squaret = 0 To 2
+	FeedtS()
+	FixtS()
+	PlacetS()
+	Next
+Fend
+Function FeedtC
+	Go FeederC
+	Wait 0.5
+	Go FeederC +Z(3) +Z(circulet * 6) /1
+	On 12
+	Wait 0.5
+	Go FeederC -Z(3)
+	Go FeederC -Z(20) -Z(circulet * 6) -X(7) /1
+
+Fend
+ Function FixtC
+ 	Go Fixertask3 -Z(25)
+ 	Go Fixertask3 +Z(5) +X(2)
+ 	Off 12
+ 	Wait 0.5
+ 	Go Fixertask3 -Z(25)
+ 	On 10
+ 	Wait 1
+ 	Off 10
+ 	Go Fixedtask3 -Z(20)
+ 	Go Fixedtask3 +Z(3)
+ 	On 12
+ 	Wait 1
+ 	Go Fixedtask3 -Z(20)
+ Fend
+Function PlacetC
+	Go Placedtask3 -Z(20)
+	Go Placedtask3 -Z(20) -X(circulet * 27.5) +Y(circulet * 10.5)
+	Wait 0.5
+	Go Placedtask3 +Z(5) -X(circulet * 27.5) +Y(circulet * 10.5)
+	Off 12
+	Wait 0.5
+	Go Placedtask3 -Z(20) -X(circulet * 27.5) -Y(circulet * 10.5)
+Fend
+Function FeedtS
+		Go FeederS /1
+		Go FeederS +Z(2) +Z(squaret * 6) /1
+		On 12
+		Wait 0.5
+		Go FeederS -Z(3)
+		Go FeederS -Z(20) -Z(squaret * 6) -X(20) /1
+Fend
+Function FixtS
+	Go FixerStask3 -Z(20)
+	Go FixerStask3 +Z(3.5)
+	Wait 1
+	Go FixerStask3 +Z(3.5) +X(11) +Y(7.5)
+	Off 12
+	Go FixerStask3 -Z(10) +X(11) +Y(7.5)
+	Go FixedStask3 -Z(10)
+	Go FixedStask3 +Z(4)
+	On 12
+	Wait 1
+	Go FixedStask3 -Z(20)
+	Go FixedStask3 -Z(20) -U(18)
+Fend
+Function PlacetS
+	Go PlacedStask3 -Z(20)
+	Go PlacedStask3 -Z(20) -X(squaret * 28.663) +Y(squaret * 10.001)
+	Wait 0.5
+	Go PlacedStask3 -X(squaret * 28.663) +Y(squaret * 10.001) +Z(4)
+	Off 12
+	Go PlacedStask3 -Z(20) -X(squaret * 28.663) +Y(squaret * 10.001)
+Fend
