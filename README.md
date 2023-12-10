@@ -16,3 +16,4 @@
 
 ### :electric_plug:EE
 * [Electrical Wiring] (https://github.com/F11103118/Group-A-1/blob/main/Wiring%20Diagram.pdf)
+* [Electrical Wiring] (https://github.com/F11103118/Group-A-1/tree/main/HMI%20Program)
