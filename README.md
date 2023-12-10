@@ -7,3 +7,9 @@
 
 * [Pick and Place] (https://github.com/F11103118/Group-A-1/blob/main/Pick%20and%20Place%20Program.txt)
 * [Stacking] (https://github.com/F11103118/Group-A-1/blob/main/Stacking%20Program.txt)
+
+## :file_folder:Resources
+### :mechanic:ME
+* [3D Files]
+
+### :electric_plug:EE
