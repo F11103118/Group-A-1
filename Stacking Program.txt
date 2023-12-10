@@ -1,0 +1,70 @@
+Integer stacking
+Integer Secondpart
+Function stracking
+	Tool 1
+	Go P1
+For stacking = 0 To 2
+	part1()
+Next
+For Secondpart = 0 To 2
+	part2()
+Next
+Fend
+Function part1
+Move PickS
+Go PickS +Z(3) +Z(stacking * 6) /1
+	On 12
+	Wait 1
+Go PickS -Z(7) +Z(stacking * 6) /1
+Go PickS -Z(7) +Z(stacking * 6) -X(20) /1
+	Wait 0.5
+Go FixtureS -Z(stacking * 17)
+	Wait 1
+Go FixPickS -Z(stacking * 17) -X(0.3) -Y(2.8)
+	Off 12
+	Wait 1
+Go FixPickS -Z(5) -Z(stacking * 17)
+Go FixPickS -Z(5) -Z(stacking * 18) -Z(20) -X(40)
+	Wait 0.5
+	
+Move PickC
+Go PickC +Z(3) +Z(stacking * 6) /1
+	On 12
+	Wait 1
+Go PickC -Z(7) +Z(stacking * 6) -X(20) /1
+	Wait 0.5
+Go FixPickC -Z(stacking * 13) /1
+Go FixPickC -Z(stacking * 13) +X(5.156) +Y(2) /1
+	Off 12
+	Wait 1
+Go FixPickC -Z(stacking * 13) +X(5.156) +Y(2) -Z(10) /1
+Go FixPickC -Z(stacking * 13) +X(8) +Y(3) -Z(30) -X(30) /1
+	
+Fend
+Function part2
+Go PositionS
+Go PositionS -Y(Secondpart * 30.900) /1
+Go PositionS -Y(Secondpart * 30.900) +Z(8) /1
+  On 12
+  Wait 1.0
+Go PositionS -Y(Secondpart * 30.900) +Z(8) -Z(50) /1
+Go FixPickS -Z(50) -Z(Secondpart * 12) /1
+Go FixPickS -Z(50) -Z(Secondpart * 12) -X(1.8) -Y(3.6) /1
+Go FixPickS -Z(50) -Z(Secondpart * 12) -X(1.8) -Y(3.6) +Z(10) /1
+Off 12
+Wait 1
+Go FixPickS -Z(50) -Z(Secondpart * 12) -X(1.8) -Y(3.6) -Z(10) /1
+
+Go PositionC /1
+Go PositionC -Y(Secondpart * 30.900) /1
+Go PositionC -Y(Secondpart * 30.900) +Z(9)
+On 12
+Wait 1
+Go PositionC -Y(Secondpart * 30.900) +Z(9) -Z(60) /1
+Go FixPickS -Z(60) -Z(Secondpart * 12) /1
+Go FixPickS -Z(60) -Z(Secondpart * 12) +Z(14)
+Go FixPickS -Z(60) -Z(Secondpart * 12) +Z(14) -Y(2.7) +X(0.8)
+Off 12
+Go FixPickS -Z(60) -Z(Secondpart * 12) +Z(15) -Y(2.7) +X(0.8) -Z(10)
+
+Fend
