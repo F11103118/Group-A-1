@@ -1,0 +1,48 @@
+Integer circulek
+Integer squaretk
+Function task4
+For circulek = 0 To 2
+	trayC()
+	eederC()
+	Next
+	For squaretk = 0 To 2
+	trayS()
+	eederS()
+
+	Next
+Fend
+Function trayC
+	Go Placedtask3 -Z(20)
+	Go Placedtask3 -Z(20) -X(circulek * 27.5) +Y(circulek * 10.5)
+	Wait 0.5
+	Go Placedtask3 +Z(8) -X(circulek * 27.5) +Y(circulek * 10.5)
+	On 12
+	Wait 0.5
+	Go Placedtask3 -Z(20) -X(circulek * 27.5) +Y(circulek * 10.5)
+Fend
+Function eederC
+	Move FeederC
+ Go FeederC -Z(3) -Z(circulek * 6) /1
+ Go FeederC +Z(14) +X(2) -Z(3) -Z(circulek * 6) /1
+ Off 12
+ Go FeederC -Z(14)
+ Go FeederC -Z(14) -X(10)
+Fend
+Function trayS
+	Go PlacedStask3 -Z(20)
+	Go PlacedStask3 -Z(20) -X(squaretk * 28.663) +Y(squaretk * 10.001)
+	Wait 0.5
+	Go PlacedStask3 -X(squaretk * 28.663) +Y(squaretk * 10.001) +Z(8)
+	On 12
+	Go PlacedStask3 -Z(20) -X(squaretk * 28.663) +Y(squaretk * 10.001)
+Fend
+Function eederS
+   		Move FeederS /1 -X(30)
+   		Go FeederS
+		Go FeederS -Z(2) -Z(squaretk * 6) /1
+		Wait 0.5
+		Go FeederS -Z(2) -Z(squaretk * 6) +Z(14) /1
+		Off 12
+		Go FeederS -Z(2) -Z(squaretk * 6) -Z(14) /1
+		Go FeederS -Z(2) -Z(squaretk * 6) -Z(14) -X(20) /1
+Fend
