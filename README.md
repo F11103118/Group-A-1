@@ -11,7 +11,7 @@
 ## :file_folder:Resources
 ### :mechanic:ME
 * [3D Files]
-  [Aligment] (https://github.com/F11103118/Group-A-1/blob/main/Alignment%20Fixture%20(2).stl)
-  [Tray] (https://github.com/F11103118/Group-A-1/blob/main/Part%20Tray.stl)
+* [Aligment] (https://github.com/F11103118/Group-A-1/blob/main/Alignment%20Fixture%20(2).stl)
+* [Tray] (https://github.com/F11103118/Group-A-1/blob/main/Part%20Tray.stl)
 
 ### :electric_plug:EE
