@@ -7,7 +7,8 @@
 
 * [Pick and Place] (https://github.com/F11103118/Group-A-1/blob/main/Pick%20and%20Place%20Program.txt)
 * [Stacking] (https://github.com/F11103118/Group-A-1/blob/main/Stacking%20Program.txt)
-
+* [Task 3] (https://github.com/F11103118/Group-A-1/blob/main/Task%203%20Program.txt)
+  
 ## :accessibility:Resources
 ### :mechanic:ME
 * [3D Files]
