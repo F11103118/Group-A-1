@@ -2,7 +2,7 @@
 
 * [Pick and Place] (https://www.youtube.com/watch?v=N4_Q2a0luog)
 * [Stacking] (https://youtu.be/UilxNILsazU)
-
+* [Task 3] (https://www.youtube.com/watch?v=dOnIVlgldbs)
 ## 🥸:Codes
 
 * [Pick and Place] (https://github.com/F11103118/Group-A-1/blob/main/Pick%20and%20Place%20Program.txt)
